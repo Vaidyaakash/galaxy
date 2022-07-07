@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <header>
+            <section>
+                <div id="logo"><span class="logo">⊙_⊙&nbsp;</span><span class="main_logo">Galaxy</span></div>
+                <div class="menu-bar"><i class="fa-solid fa-bars"></i></div>
+                <div class="explore">
+                    <span class="exp"> Explore &nbsp;<span class="v"><i class="fa-solid fa-caret-down"></i></span>
+
+                        <section class="dropdown">
+                            <ul>
+                                <li>Leaderboard</li>
+                                <li>Discover Photos</li>
+                                <li>Popular Searches</li>
+                                <li>Challenges</li>
+                                <li>Free HD Photos</li>
+                                <li>Blogs</li>
+                            </ul>
+                        </section>
+                    </span>
+                    <div class="license">License</div>
+                    <div class="license">Language</div>
+                    <div class="license">About</div>
+                    <div onclick="log()"
+                        style="font-size: 16px;font-weight: 700; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
+                        class="login">Login</div>
+                </div>
+            </section>
+            <div id="header_containt">
+                The best and free stock photos and hd free wallpapers shared by creators.
+                <div class="input">
+                    <input type="text" placeholder="Search Photo for free"><i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </header>
+
+        <div id="options">
+            <div onclick="homes()" class="home">Home</div>
+            <div onclick="trend()" class="trending">Trending</div>
+            <div onclick="latests()" class="latest">Latest</div>
+            <div onclick="collection()" class="collections">Collections</div>
+        </div>
+
+        <div class="containers">
+
+            <div class="container1">
+                <div class="box1">
+                    <div onclick="openImg()" id="img1"></div>
+                    <div id="img2"></div>
+                    <div id="img3"></div>
+                </div>
+                <div class="box2">
+                    <div id="img4"></div>
+                    <div id="img5"></div>
+                    <div id="img6"></div>
+                </div>
+                <div class="box3">
+                    <div id="img7"></div>
+                    <div id="img8"></div>
+                    <div id="img9"></div>
+                    <div id="img10"></div>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="box4">
+                    <div id="img11"></div>
+                    <div id="img12"></div>
+                    <div id="img13"></div>
+                </div>
+                <div class="box5">
+                    <div id="img14"></div>
+                    <div id="img15"></div>
+                    <div id="img17"></div>
+                </div>
+                <div class="box6">
+                    <div id="img16"></div>
+                    <div id="img18"></div>
+                    <div id="img19"></div>
+                    <div id="img20"></div>
+                </div>
+            </div>
+            <div class="container3">
+                <div class="box7">
+                    <div id="img21"></div>
+                    <div id="img22"></div>
+                    <div id="img23"></div>
+                </div>
+                <div class="box8">
+                    <div id="img24"></div>
+                    <div id="img25"></div>
+                    <div id="img27"></div>
+                </div>
+                <div class="box9">
+                    <div id="img26"></div>
+                    <div id="img28"></div>
+                    <div id="img29"></div>
+                </div>
+            </div>
+            <div class="container4">
+                <div class="box8">
+                    <div id="img31"></div>
+                    <div id="img32"></div>
+                    <div id="img33"></div>
+                </div>
+                <div class="box9">
+                    <div id="img34"></div>
+                    <div id="img35"></div>
+                    <div id="img37"></div>
+                </div>
+                <div class="box10">
+                    <div id="img36"></div>
+                    <div id="img38"></div>
+                    <div id="img39"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Log in details -->
+    <!-- 
+1. log in
+2. onclick image open
+3. support 
+4. footer
+
+ -->
+
+    <div class="main_login">
+        <div onclick="submit_form()" class="close-form">
+            X
+        </div>
+        <div class="login_menu">
+            <div class="login-btns">
+                <button onclick="log_in()" class="login_btn">Login</button>
+                <button onclick="log_out()" class="login_btn">Register</button>
+            </div><br><br><br>
+            <input class="user-input" type="text" placeholder="User ID">
+            <hr><br>
+            <input class="user-input" type="password" placeholder="Password">
+            <hr><br>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Remember Password</label><br><br><br>
+            <button onclick="submit_form()" class="login_btn">Log In</button>
+        </div>
+        <div class="register">
+            <div class="login-btns">
+                <button onclick="log_in()" class="login_btn">Login</button>
+                <button onclick="log_out()" class="login_btn">Register</button>
+            </div><br><br>
+            <input class="user-input" type="text" placeholder="Name"><hr>
+            <input class="user-input" type="text" placeholder="Email"><hr>
+            <input class="user-input" type="text" placeholder="Number"><hr>
+            
+            <input class="user-input" type="password" placeholder="Password">
+            <hr>
+            <input type="checkbox" id="tc">
+            <label for="tc">T & C</label><br><br><br>
+            <button onclick="submit_form()" class="login_btn">Submit</button><br><br><br>
+        </div>
+    </div>
+
+    <!--  ********************footer******************** -->
+    <footer>
+        <div class="f1">
+            <div class="f1-1">
+                Free HD photos and videos shared by talented creators.
+            </div>
+            <div class="f1-2">
+                Download one of our apps.
+            </div>
+            <div class="os">
+                <div class="os1"><i class="fa-brands fa-apple"></i>&nbsp; iOS</div>
+                <div class="os2"><i class="fa-brands fa-android"></i> &nbsp; Android</div>
+            </div>
+           <div class="social">
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+           </div>
+        </div>
+        <div class="f2">
+            <div class="f2-1">Galaxy</div>
+            <ul>
+                <li>Free Stock Photos</li>
+                <li>Free Videos</li>
+                <li>Popular searches</li>
+                <li>Collections</li>
+                <li>Challenges</li>
+                <li>Leaderboard</li>
+                <li>Other plugins & apps</li>
+            </ul>
+        </div>
+        <div class="f3">
+            <div class="f3-1">Company</div>
+            <ul>
+                <li>About</li>
+                <li>Blog</li>
+                <li>FAQ</li>
+                <li>Become a hero</li>
+                <li>Partner with Galaxy</li>
+                <li>Image & Video API</li>
+                <li>Sign Up</li>
+            </ul>
+        </div>
+        <div class="f4">
+            <div class="f4-1">Free Stock Photos</div>
+            <button>Black and white photography</button><button>birthday images</button><br>
+            <button>Free business videos</button><button>New year images</button><br>
+            <button>Cool Wallpapers</button><button>Best HD Wallpapers</button><br>
+            <button>Galaxy Wallpaper</button><button>Lock Screen Wallpaper</button><br>
+            <button>iPhone wallpaper</button><button>4K wallpaper</button><br>
+            <button>Samsung wallpaper</button><button>Love wallpaper</button><br>
+            <button>Mobile wallpaper</button>
+        </div>
+    </footer>
+
+
+    <!-- Support -->
+
+    <div class="support">
+        <div onclick="supportMe()" class="support-icon">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+        <!-- <i class="fa-solid fa-angle-down"></i> -->
+        <div class="support1">
+            <div class="support-top">
+                <p>Welcome to Galaxy Support, Please fill in your details to state your query</p>
+            </div>
+            <div class="support-cont">
+                <div class="details">Name</div>
+                <input type="text" placeholder="Your name"><br><br>
+                <div class="details">Email</div>
+                <input type="text" placeholder="Your email"><br><br>
+                <div class="details">Phone</div>
+                <input type="number" placeholder="Your Phone"><br><br>
+                <button>Start Chat</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./homepage.js"></script>
+</body>
+
+</html>

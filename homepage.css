@@ -1,0 +1,547 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.main_container{
+    width: 1590px;
+}
+header{
+    background-image: url(https://images.pexels.com/photos/6329454/pexels-photo-6329454.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=2000);
+    width: 100%;
+    height: 450px;
+    background-repeat:repeat-x;
+}
+/* ***************** inside of header content ***************** */
+#header_containt{
+    /* position: absolute; */
+    /* top: 150px;
+    left: 32%; */
+    width: 40%;
+    padding-top: 150px;
+    padding-left: 32%;
+    color: #fff;
+    font-size: 35px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.input{
+    /* position: relative; */
+    margin: 20px 0;
+}
+.fa-magnifying-glass{
+    color: #000;
+    /* position: relative; */
+    /* right: 10%;
+    top: 20px; */
+    margin-right:0px;
+    background-color: #fff;
+    height: 45px;
+    width: 6%;
+    line-height: 40px;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 28px;
+    cursor: pointer;
+}
+#header_containt input {
+    margin-top: 12px;
+    /* position: absolute; */
+    width: 34vw;
+    height: 25px;
+    padding: 10px 5px;
+    border-radius: 8px 0px 0 8px;
+    font-size: 25px;
+    border: none;
+}
+.menu-bar{
+    display: none;
+}
+section{
+    position:fixed;
+    /* background-color: #fff; */
+    width: 100%;
+    /* color: #fff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+    height: 40px;
+    font-weight: 600;
+    transition: 0.21s ease;
+}
+.explore{
+    display: flex;
+    margin-right: 5%;
+    color: #fff;
+    gap: 1.5rem;
+    position: relative;
+    transition: 0.21s ease;
+}
+#logo{
+    margin: 0 2.5%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+#logo:hover{
+    filter: brightness(0.8);
+}
+
+.main_logo{
+    line-height: 25px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    font-weight: 1000;
+}
+.logo {
+    width: 80px;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 140, 0);
+    border-radius: 5px 5px 30px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.explore div, .explore span{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.2s ease;
+}
+.exp, .license{
+    padding-bottom: 15px;
+}
+
+/* ****************Dropdown**************** */
+.dropdown{
+    position: absolute;
+    top: 35px;
+    background-color: #fff;
+    color: #000;
+    left: -100px;
+    width: 202px;
+    height: 240px;
+    border-radius: 5px;
+    display: none;
+}
+ul{
+    padding: 0;
+    line-height: 40px;
+    margin: 5px 20px;
+}
+.exp{
+    position: relative;
+    transition: 5s ease-in;
+}
+.dropdown li{
+    list-style: none;
+    cursor: pointer;
+    /* display: block; */
+}
+.dropdown li:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.exp:hover .dropdown{
+    display: block;
+    z-index: 1;
+}
+.exp:hover .fa-solid {
+    transform: rotate(180deg);
+}
+
+/* right header element hover */
+.explore span:hover, .explore .license:hover {
+    color: rgb(222, 217, 217);
+    cursor: pointer;
+}
+
+/* Login button */
+
+.login{
+    background-color: #fff;
+    color: #000;
+    padding: 0px 10px;
+    /* width: 50px; */
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    line-height: 35px;
+}
+.login:active{
+    background-color: rgb(227, 227, 227);
+}
+
+/* Routes for images */
+
+#options{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#options div{
+    cursor: pointer;
+}
+.home, .trending, .collections, .latest{
+    border-radius: 5px;
+    /* background-color: #000; */
+    text-align: center;
+    height: 45px;
+    padding: 0 15px;
+    /* color: #fff; */
+    color: #000000;
+    line-height: 40px;
+}
+.home{
+    background-color: #000;
+    color: #fff;
+}
+
+/* Images style */
+
+.container1, .container2, .container3, .container4{
+    /* margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px; */
+    display: flex;
+    margin-top: 45px;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 60px;
+}
+img{
+    width: 350px;
+    padding: 25px 0px;
+}
+
+/* login page */
+
+.main_login{
+    position: absolute;
+    z-index: 100;
+    top: 96px;
+    height: 580px;
+    width: 480px;
+    background-color: rgb(255, 255, 255);
+    padding: 45px;
+    box-sizing: border-box;
+    display: none;
+}
+.login-btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.login_btn{
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(223, 73, 18);
+    color: #fff;
+    font-weight: 600;
+    font-family: sans-serif;
+    border: none;
+    filter: brightness(1.2);
+}
+.submit{
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(223, 73, 18);
+    color: #012;
+    font-weight: 600;
+    font-family: sans-serif;
+    border: none;
+    filter: brightness(1.2);
+}
+.login_btn:active, .regi_btn:active{
+    background-color: rgb(235, 14, 11);
+    /* border: 1px solid black; */
+}
+.user-input{
+    border: none;
+    display: block;
+    padding: 14px 0;
+    font-size: 18px;
+    width: 100%;
+}
+.user-input:hover{
+    border: none;
+}
+.register{
+    display: none;
+}
+.login-menu{
+    display: block;
+}
+.close-form{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    top: 20px;
+}
+
+/* *****************Footer building***************** */
+footer{
+    position:absolute;
+    bottom: -2275px;
+    /* height: 1500px; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60%;
+    color: #fff;
+    background-color: #000;
+    font-family: sans-serif;
+}
+
+footer li{
+    list-style: none;
+    margin-left: -18px ;
+    font-size: 18px;
+    cursor: pointer;
+}
+footer li:hover{
+    color: rgb(230, 230, 230);
+}
+
+/* OS button */
+.os{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.os .fa-brands{
+    font-size: 25px;
+}
+.os .os1:active, .os2:active{
+    background-color: rgb(207, 203, 203);
+}
+.os .os1, .os2{
+    width: 130px;
+    text-align: center;
+    height: 45px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #000;
+    background-color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+    display: flex;
+    gap: 28px;
+}
+.social .fa-brands{
+    font-size: 25px;
+    cursor: pointer;
+}
+.f1, .f2, .f3, .f4{
+    margin-top: 55px;
+    font-size: 26px;
+}
+.f1{
+    width: 28%;
+}
+.f1-2{
+    color: rgb(236, 236, 236);
+    font-size: 17px;
+    margin-top: 25px;
+}
+.f2{
+    width: 15%;
+}
+.f3{
+    width: 15%;
+}
+.f4{
+    width: 28%;
+}
+.f4 button{
+    padding: 8px 10px;
+    font-size: 16px;
+    background-color:#000;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 5px;
+}
+.f4 button:hover{
+    background-color: #b1b1bc;
+    color: rgb(20, 19, 19);
+}
+/* ***************Support************** */
+.support-icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: orange;
+    color: #fff;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    line-height: 55px;
+    cursor: pointer;
+    box-shadow: 1.2px 1.2px 10px gray;
+}
+.fa-angle-up{
+    font-size: 32px;
+    font-weight: 600;
+}
+.support1{
+    position: fixed;
+    bottom: 85px;
+    right: 35px;
+    width: 300px;
+    background-color: #fff;
+    height: 450px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    transition: 4.3s ease-in-out;
+    display: none;
+}
+.spport-on{
+    display: block;
+}
+.support-top{
+    width: 100%;
+    background-color: orange;
+    padding: 1px 0;
+    border-radius: 10px 10px 0 0 ;
+    font-size: 18px;
+    padding: 6px;
+    box-sizing: border-box ;
+}
+.support-cont{
+    font-size: 17px;
+    padding: 35px;
+    line-height: 22px;
+    box-sizing: border-box;
+}
+.support-cont input{
+    width: 100%;
+    height: 22px;
+    font-size: 14px;
+}
+.support-cont button{
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 2px solid black;
+    background-color: transparent;
+}
+.support-cont button:hover{
+    background-color: #012;
+    color: #fff;
+}
+
+@media   (max-width:450px) {
+    #options{
+        gap: 0px;
+        font-size: 15px;
+    }
+    .home, .trending, .collections, .latest{
+        height: 25px;
+        line-height: 20px;
+    }
+    .main_logo{
+        font-size: 20px;
+    }
+    #logo{
+        margin: 0 6.5%;
+
+    }
+    .logo {
+        width: 55px;
+        height: 45px;
+        font-size: 15px;
+    }
+    .explore{
+        display: none;
+    }
+    .menu-bar{
+        display: inline-block;
+    }
+    .fa-bars{
+        font-size: 25px;
+        float: right;
+        margin-right: 10px;
+    }
+    header{
+        width: 100%;
+        height: 350px;
+    }
+    .input{
+        display: none;
+    }
+    #header_containt{
+        font-size: 22px;
+        width: 60%;
+        font-weight: 600;
+        padding-left: 20%;
+    }
+    img{
+        width: 80vw;
+        padding: 25px 0px;
+    }
+    footer{
+        display: none;
+    }
+    .support-icon{
+        width: 35px;
+        height: 35px;
+        bottom: 25px;
+        right: 25px;
+        line-height: 40px;
+    }
+    .fa-angle-up{
+        font-size: 22px;
+    }
+    .support1{
+        bottom: 70px;
+        right: 25px;
+        width: 220px;
+        height: 320px;
+    }
+    .spport-on{
+        display: block;
+    }
+    .support-top{
+        width: 100%;
+        height: 70px;
+        padding: 0px 10px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        font-size: 14px;
+    }
+    .support-cont{
+        margin-top: 85px;
+        font-size: 15px;
+        padding: 0 20px;
+        line-height: 18px;
+        /* box-sizing: border-box; */
+    }
+}
